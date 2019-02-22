@@ -1,0 +1,84 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport="true"
+    [attr.role]="(isHandset$ ) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ ) ? 'over' : 'side'"
+    [opened]="!(isHandset$)">
+    <mat-toolbar color="primary">Menu</mat-toolbar>
+    
+
+
+
+    <mat-nav-list>
+      
+      
+        <mat-tab-group>
+
+                   <mat-tab label="Accedi">
+
+                        <h2>Accedi</h2>
+                        <input type="text" placeholder="username">
+                        <br>
+                        <input type="text" placeholder="password">
+                         <br>
+                        <button id="x"> LOGIN</button>
+              
+
+                   </mat-tab>
+
+
+
+
+                <mat-tab label="Registrati">
+              
+                        <app-form></app-form>
+                        <button id="x">REGISTRATI</button>
+            
+            
+                 </mat-tab>
+
+         </mat-tab-group>
+
+     </mat-nav-list>
+      
+
+      
+      
+
+    
+    
+
+    
+    
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+
+
+
+
+
+
+
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+
+
+      
+      <span>IlMioSito</span>
+      
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Male.svg/220px-Male.svg.png">
+    
+    </mat-toolbar>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,46 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 350px;
+  background-image: url('https://img.freepik.com/foto-gratuito/sfondo-del-foglio-di-carta-stropicciata_1194-7545.jpg?size=626&ext=jpg')
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  
+}
+
+img{
+  margin-left: 30px;
+  width: 30px;
+    height: 30px;
+}
+
+
+
+#x{
+  background-color: rgb(10, 99, 233); /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 99px;
+}
+
+input{
+  margin-left: 38px;
+  padding: 10px;
+  width: 199px
+}
+
+h2{
+  margin-left: 99px;
+}
